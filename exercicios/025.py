@@ -1,0 +1,6 @@
+print('Este código procura o nome SILVA')
+n = input('Digite o nome: ').strip()
+s =  n.split()
+r = s.upper()
+print(s.find('SILVA'))
+#print('O nome digitado é: {} e {} contém o nome SILVA'.format(n, n.find('SILVA')))

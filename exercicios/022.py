@@ -1,0 +1,8 @@
+print('Este exercício é sobre manipulação de textos: ')
+nome = input('Digite seu nome completo: ').strip()
+print('O nome em MAIÚSCULA é: {}'.format(nome.upper()))
+print('O nome em minúscula é: {}'.format(nome.lower()))
+fatiado = nome.split()
+print('A quantidade de caracteres (sem espaço) é: {}'.format(len(nome) - nome.count('')))
+print('O primeiro nome tem: {} letras'.format(len(fatiado[0])))
+print('O sobre nome tem: {} letras'.format(len(fatiado[1])))
