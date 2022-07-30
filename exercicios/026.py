@@ -1,0 +1,5 @@
+print('Este código procura pela letra A e informa as posições.')
+f = str(input('Informe a frase: ')).strip().upper()
+print('A letra A aparecer {} na frase'.format(f.count('A')))
+print('A letra A pareceu na posição: {}'.format(f.find('A')+1))
+print('A letra A pareceu na posição: {}'.format(f.rfind('A')+1))

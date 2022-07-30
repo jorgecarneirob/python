@@ -1,6 +1,4 @@
 print('Este exercício é sobre manipulação de textos: ')
-nome = input('Digite seu nome completo: ')
+nome = input('Digite seu nome completo: ').strip()
 fatiado = nome.split()
-ultimo = len(fatiado)
-print(ultimo)
-print('Primeiro nome é: {}\nSegundo nome é: {}'.format(fatiado[0], fatiado[ultimo]))
+print('Primeiro nome é: {}\nSegundo nome é: {}'.format(fatiado[0], fatiado[len(fatiado)-1]))
