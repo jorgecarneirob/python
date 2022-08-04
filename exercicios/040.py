@@ -7,6 +7,6 @@ media = (n1 + n2) / 2
 if media < 5:
     print('Sua média é: \033[31m{:.2f} REPROVADO.\033[m'.format(media))
 elif media >= 7:
-    print('Sua média é: \033[32m{} APROVADO!\033[m'.format(media))
+    print('Sua média é: \033[32m{:.2f} APROVADO!\033[m'.format(media))
 else:
-    print('Sua média é: \033[33m{} RECUPERAÇÃO.\033[m'.format(media))
+    print('Sua média é: \033[33m{:.2f} RECUPERAÇÃO.\033[m'.format(media))

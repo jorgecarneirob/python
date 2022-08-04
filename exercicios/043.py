@@ -8,9 +8,9 @@ if resultado < 18.5:
     print('Seu IMC é {:.2f} e você está abaixo do peso.'.format(resultado))
 elif resultado > 18.5 and resultado < 25:
     print('Seu IMC é: {:.2f} e você está no peso ideal!'.format(resultado))
-elif resultado > 25 and resultado < 30:
+elif resultado >= 25 and resultado < 30:
     print('Seu IMC é: {:.2f} e você tem sobrepeso.'.format(resultado))
-elif resultado > 30 and resultado < 40:
+elif resultado >= 30 and resultado < 40:
     print('Seu IMC é: {:.2f} e você está obeso.'.format(resultado))
 else:
     print('Seus IMC é: {:.2f} e você tem obesidade morbida.'.format(resultado))
