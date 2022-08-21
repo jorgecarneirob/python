@@ -1,0 +1,49 @@
+from time import sleep
+print('\033[31m* \033[m' * 50)
+print('''Este código faz funões matemáticas.'''.center(100))
+print('\033[31m* \033[m' * 50)
+n1 = int(input('Digite o 1° valor: '))
+n2 = int(input('Digite o 2° valor: '))
+resposta = 0
+def menu():
+    resposta = int(input('''Escolha uma opção:
+[ 1 ] SOMAR.
+[ 2 ] MAIOR.
+[ 3 ] MULTIPLICAR.
+[ 4 ] NOVOS NUMEROS.
+[ 5 ] SAIR DO PROGRAMA.'''))
+    return resposta
+sair = 0
+while sair == 0:
+    if resposta == 0:
+        menu()
+    if resposta == 1:
+        print('A soma entre {} e {} é: {}'.format(n1, n2, n1 + n2))
+        menu()
+    if resposta == 2 and n1 > n2:
+        print('O maior é: {}'.format(n1))
+        menu()
+    if resposta == 2 and n1 < n2:
+        print('O maior é: {}'.format(n2))
+        menu()
+    if resposta == 2 and n1 == n2:
+        print('São IGUAIS!'.format(n2))
+        menu()
+    if resposta == 3:
+        print(n1 * n2)
+        menu()
+    if resposta == 4:
+        n1 = int(input('Digite o 1° valor: '))
+        n2 = int(input('Digite o 2° valor: '))
+        menu()
+    if resposta == 5:
+        print('Saindo.', end='')
+        sleep(1)
+        print('.',end='')
+        sleep(1)
+        print('.', end='')
+        sleep(1)
+        print('.',end='')
+        sair +=1
+    else:
+        print('[ ERRO ] OPÇÃO INVALIDA.')

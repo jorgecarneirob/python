@@ -1,27 +1,20 @@
 print('\033[31m* \033[m' * 50)
-print('Este código faz uma anáise completa.'.center(100))
+print('Exibe o maior e o menor peso.'.center(100))
 print('\033[31m* \033[m' * 50)
-nomeh = ''
-idadeh = 0
-idadem = 0
-idadeg = 0
-for x in range(1, 5):
-    nome = str(input('Qual o seu nome?: '))
-    idade = int(input('Qual sua idade?: '))
-    sexo = str(input('Digite M para mulher ou H para Homem: '))
-    if x == 1 and sexo == 'H':
-        nomeh = nome
-        idadeh = idade
-        idadeg += idade
-    if idade > idadeh and sexo == 'H':
-        nomeh = nome
-        idadeh = idade
-        idadeg += idade
-    if sexo == 'M' and idade < 20:
-        idadeg += idade
-        idadem +=1
-idadeg = idadeg / 4
-print('''A média de idade do grupo é:{}
-O homem mais velho é o: {}
-{} mulheres tem menos de 20 anos.'''.format(idadeg, nomeh, idadem))
-
+maior = 0
+menor = 0
+p = ''
+cont = 1
+while p in 'Yy':
+    peso = float(input('Digite seu peso Kg: '))
+    if cont == 1:
+        maior = peso
+        menor = peso
+    if peso > maior:
+        maior = peso
+    if peso < menor:
+        menor = peso
+    cont += 1
+    p = input('Deseja continuar?[y/n]: ')
+print('''Maior peso: {}Kg.
+Menor: {}Kg'''.format(maior, menor))
