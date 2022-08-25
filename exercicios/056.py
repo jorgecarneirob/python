@@ -24,6 +24,8 @@ while cont <= 4:
         idadeg += idade
         idadem +=1
 idadeg = idadeg / 4
-print('''A média de idade do grupo é:{}
+print('''===========================
+A média de idade do grupo é:{}
 O homem mais velho é o: {}
-{} mulheres tem menos de 20 anos.'''.format(idadeg, nomeh, idadem))
+{} mulheres tem menos de 20 anos.
+================================'''.format(idadeg, nomeh, idadem))
