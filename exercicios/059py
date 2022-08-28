@@ -5,90 +5,29 @@ print('\033[31m* \033[m' * 50)
 n1 = int(input('Digite o 1° valor: '))
 n2 = int(input('Digite o 2° valor: '))
 resposta = 0
-sair = False
 while resposta != 5:
-    if resposta == 0:
-        resposta = int(input('''
-Escolha uma opção:
-[ 1 ] SOMAR.
-[ 2 ] MAIOR.
-[ 3 ] MULTIPLICAR.
-[ 4 ] NOVOS NUMEROS.
-[ 5 ] SAIR DO PROGRAMA.
-'''))
+    resposta = int(input('''
+[ 1 ] SOMA
+[ 2 ] MAIOR
+[ 3 ] MULTIPLICAÇAO
+[ 4 ] NOVO NUMEROS
+[ 5 ] SAIR
+Digite a opção:'''))
     if resposta == 1:
         print('A soma entre {} e {} é: {}'.format(n1, n2, n1 + n2))
-        resposta = int(input('''
-Escolha uma opção:
-[ 1 ] SOMAR.
-[ 2 ] MAIOR.
-[ 3 ] MULTIPLICAR.
-[ 4 ] NOVOS NUMEROS.
-[ 5 ] SAIR DO PROGRAMA.
-'''))
-    if resposta == 2 and n1 > n2:
-        print('O maior é: {}'.format(n1))
-        resposta = int(input('''
-Escolha uma opção:
-[ 1 ] SOMAR.
-[ 2 ] MAIOR.
-[ 3 ] MULTIPLICAR.
-[ 4 ] NOVOS NUMEROS.
-[ 5 ] SAIR DO PROGRAMA.
-'''))
-    if resposta == 2 and n1 < n2:
-        print('O maior é: {}'.format(n2))
-        resposta = int(input('''
-Escolha uma opção:
-[ 1 ] SOMAR.
-[ 2 ] MAIOR.
-[ 3 ] MULTIPLICAR.
-[ 4 ] NOVOS NUMEROS.
-[ 5 ] SAIR DO PROGRAMA.
-'''))
-    if resposta == 2 and n1 == n2:
-        print('São IGUAIS!'.format(n2))
-        resposta = int(input('''
-        Escolha uma opção:
-[ 1 ] SOMAR.
-[ 2 ] MAIOR.
-[ 3 ] MULTIPLICAR.
-[ 4 ] NOVOS NUMEROS.
-[ 5 ] SAIR DO PROGRAMA.
-'''))
-    if resposta == 3:
-        print(n1 * n2)
-        resposta = int(input('''
-Escolha uma opção:
-[ 1 ] SOMAR.
-[ 2 ] MAIOR.
-[ 3 ] MULTIPLICAR.
-[ 4 ] NOVOS NUMEROS.
-[ 5 ] SAIR DO PROGRAMA.
-'''))
-    if resposta == 4:
+    elif resposta == 2 and n1 > n2:
+        print('O maior entre {} e {} é {}'.format(n1, n2, n1))
+    elif resposta == 2 and n1 < n2:
+        print('O maior entre {} e {} é: {}'.format(n1, n2, n2))
+    elif resposta == 2 and n1 == n2:
+        print('{} e {} São IGUAIS!'.format(n1, n2))
+    elif resposta == 3:
+        print('A multiplicação de {} e {} é: {}'.format(n1, n2, n1 * n2))
+    elif resposta == 4:
         n1 = int(input('Digite o 1° valor: '))
         n2 = int(input('Digite o 2° valor: '))
-        resposta = int(input('''
-Escolha uma opção:
-[ 1 ] SOMAR.
-[ 2 ] MAIOR.
-[ 3 ] MULTIPLICAR.
-[ 4 ] NOVOS NUMEROS.
-[ 5 ] SAIR DO PROGRAMA.
-'''))
     else:
-        print('Opção inválida, tente novamente')
-        resposta = int(input('''
-Escolha uma opção:
-[ 1 ] SOMAR.
-[ 2 ] MAIOR.
-[ 3 ] MULTIPLICAR.
-[ 4 ] NOVOS NUMEROS.
-[ 5 ] SAIR DO PROGRAMA.
-'''))
-
-
+        print('[ ERRO ] OPÇÃO INVALIDA.')
 print('Saindo.', end='')
 sleep(1)
 print('.',end='')
