@@ -2,6 +2,7 @@
 #email:jorgecarneirob@hotmail.com
 
 from translate import Translator
+from time import sleep
 print('\033[31m* \033[m' * 50)
 print('Este é um tradutor.'.center(100))
 print('\033[31m* \033[m' * 50)
@@ -11,7 +12,7 @@ while i != 3:
 Informe o idioma origem e destino:
 [ 1 ] pt-br
 [ 2 ] Inglês
-[ 4 ] SAIR
+[ 3 ] SAIR
 Digite a opção: '''))
     if i == 1: 
         s = Translator(from_lang='pt-br', to_lang='english')
