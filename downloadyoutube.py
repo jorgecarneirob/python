@@ -12,6 +12,5 @@ path = input('Digite o caminho: ')
 yt = YouTube(link)
 
 print('Baixando...')
-ys = yt.streams.first().download(path)
+ys = yt.streams.filter(only_audio=False).first().download(path)
 print('Download completo!')
-#.filter(only_audio=False).first()
