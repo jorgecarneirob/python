@@ -26,8 +26,6 @@ Digite a opção:'''))
     elif resposta == 4:
         n1 = int(input('Digite o 1° valor: '))
         n2 = int(input('Digite o 2° valor: '))
-    else:
-        print('[ ERRO ] OPÇÃO INVALIDA.')
 print('Saindo.', end='')
 sleep(1)
 print('.',end='')
