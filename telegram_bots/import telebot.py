@@ -3,7 +3,7 @@
 #JorgeCarneiroBot
 
 import telebot
-CHAVE_API = "6395897725:AAG8xxkWWJkR_7zsl6stHjfCPN3RP-qbhsY"
+CHAVE_API = 
 
 #registra chave API
 bot = telebot.TeleBot(CHAVE_API)
